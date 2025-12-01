@@ -4,6 +4,28 @@ require('dotenv').config();
 
 const projects = [
   {
+    title: "Student Attendance System",
+    description: "Enterprise-grade attendance management system with role-based access control, automated notifications, and comprehensive analytics. Features real-time tracking, performance monitoring, and RESTful API integration.",
+    company: "Academic Project",
+    duration: "Full-Stack • Enterprise Application",
+    technologies: [
+      "Spring Boot 3",
+      "Java",
+      "MySQL",
+      "Spring Security",
+      "Thymeleaf",
+      "Bootstrap 5",
+      "Spring Data JPA",
+      "Maven",
+      "REST API"
+    ],
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=500&fit=crop",
+    liveUrl: "https://attendance-system-demo.herokuapp.com",
+    githubUrl: "https://github.com/selvaprakash/student-attendance-system",
+    featured: true,
+    order: 1
+  },
+  {
     title: "Diabetes Prediction & Health Assistant",
     description: "AI-powered diabetes risk prediction system with personalized meal planning, health insights, and PDF reports using Random Forest ML model. Features interactive health dashboard with real-time predictions.",
     company: "Personal Project",
@@ -23,7 +45,7 @@ const projects = [
     liveUrl: "https://diabetes-prediction-demo.vercel.app",
     githubUrl: "https://github.com/selvaprakash/diabetes-prediction",
     featured: true,
-    order: 1
+    order: 2
   },
   {
     title: "Women's Professional Leagues Platform",
@@ -43,7 +65,7 @@ const projects = [
     liveUrl: "https://wpl-platform-demo.com",
     githubUrl: "https://github.com/selvaprakash/wpl-platform",
     featured: true,
-    order: 2
+    order: 3
   },
   {
     title: "Smart Task Manager",
@@ -62,7 +84,7 @@ const projects = [
     liveUrl: "https://smart-tasks-app.vercel.app",
     githubUrl: "https://github.com/selvaprakash/smart-task-manager",
     featured: false,
-    order: 3
+    order: 4
   }
 ];
 
