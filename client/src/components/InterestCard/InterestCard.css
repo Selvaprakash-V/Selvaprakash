@@ -1,0 +1,47 @@
+.interest-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, var(--accent-teal), var(--accent-cyan));
+  border-radius: 25px;
+  color: var(--bg-primary);
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(92, 225, 230, 0.3);
+}
+
+.interest-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.interest-card:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 30px rgba(92, 225, 230, 0.5);
+}
+
+.interest-card:hover::before {
+  opacity: 1;
+}
+
+.interest-icon,
+.interest-name {
+  position: relative;
+  z-index: 1;
+}
+
+.interest-icon {
+  font-size: 1.3rem;
+}
+
+.interest-name {
+  font-size: 0.95rem;
+}
