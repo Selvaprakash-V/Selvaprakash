@@ -6,74 +6,74 @@ const CodingProfile = () => {
     {
       platform: 'LeetCode',
       icon: '🟠',
-      username: '@yourname',
+      username: '@SelvaprakashV',
       stats: {
         solved: '500+',
         rank: 'Top 5%',
         rating: '2100'
       },
-      url: 'https://leetcode.com/yourname',
+      url: 'https://leetcode.com/u/SelvaprakashV/',
       color: '#FFA116'
     },
     {
       platform: 'GitHub',
       icon: '⚫',
-      username: '@yourname',
+      username: '@Selvaprakash-V',
       stats: {
         repos: '50+',
         stars: '1.2k',
         contributions: '2000+'
       },
-      url: 'https://github.com/yourname',
+      url: 'https://github.com/Selvaprakash-V',
       color: '#fff'
     },
     {
       platform: 'HackerRank',
       icon: '🟢',
-      username: '@yourname',
+      username: '@selvaprakashv007',
       stats: {
         stars: '5 ⭐',
         rank: 'Gold',
         badges: '25+'
       },
-      url: 'https://hackerrank.com/yourname',
+      url: 'https://www.hackerrank.com/profile/selvaprakashv007',
       color: '#2EC866'
     },
     {
       platform: 'CodeChef',
       icon: '🟤',
-      username: '@yourname',
+      username: '@selvaprakashv',
       stats: {
         rating: '1850',
         stars: '4 ⭐',
         rank: 'Global 5k'
       },
-      url: 'https://codechef.com/users/yourname',
+      url: 'https://www.codechef.com/users/selvaprakashv',
       color: '#5B4638'
     },
     {
       platform: 'Codeforces',
       icon: '🔵',
-      username: '@yourname',
+      username: '@SelvaprakashV',
       stats: {
         rating: '1600',
         rank: 'Expert',
         contests: '50+'
       },
-      url: 'https://codeforces.com/profile/yourname',
+      url: 'https://codeforces.com/profile/SelvaprakashV',
       color: '#1F8ACB'
     },
     {
-      platform: 'Stack Overflow',
-      icon: '🟧',
-      username: '@yourname',
+      platform: 'LinkedIn',
+      icon: '💼',
+      username: '@selvaprakashv007',
       stats: {
-        reputation: '5k+',
-        gold: '10',
-        answers: '100+'
+        connections: '500+',
+        posts: '50+',
+        followers: '1k+'
       },
-      url: 'https://stackoverflow.com/users/yourname',
-      color: '#F48024'
+      url: 'https://www.linkedin.com/in/selvaprakashv007/',
+      color: '#0A66C2'
     }
   ]);
 

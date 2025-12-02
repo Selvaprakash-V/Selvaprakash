@@ -50,22 +50,29 @@ The server will run on http://localhost:5000 and the client on http://localhost:
 ## Project Structure
 
 ```
-├── client/                 # React frontend
-│   ├── public/
-│   └── src/
-│       ├── components/     # Reusable components
-│       ├── pages/          # Page components
-│       ├── services/       # API services
-│       ├── assets/         # Images, icons
-│       └── styles/         # CSS files
+├── frontend/               # Frontend application
+│   ├── client/            # React application
+│   │   ├── public/        # Static files
+│   │   └── src/
+│   │       ├── components/ # Reusable components
+│   │       ├── pages/     # Page components
+│   │       ├── services/  # API services
+│   │       └── styles/    # CSS files
+│   └── README.md          # Frontend documentation
 │
-├── server/                 # Express backend
-│   ├── models/             # MongoDB models
-│   ├── routes/             # API routes
-│   ├── controllers/        # Route controllers
-│   └── server.js           # Entry point
+├── backend/               # Backend application
+│   ├── server/           # Express application
+│   │   ├── config/       # Configuration files
+│   │   ├── controllers/  # Route controllers
+│   │   ├── models/       # MongoDB models
+│   │   ├── routes/       # API routes
+│   │   └── server.js     # Entry point
+│   └── README.md         # Backend documentation
 │
-└── package.json
+├── database/             # Database configuration
+│   └── README.md         # Database setup guide
+│
+└── package.json          # Root package configuration
 ```
 
 ## Available Scripts
