@@ -74,6 +74,18 @@ const CodingProfile = () => {
       },
       url: 'https://www.linkedin.com/in/selvaprakashv007/',
       color: '#0A66C2'
+    },
+    {
+      platform: 'GeeksforGeeks',
+      icon: '🟢',
+      username: '@GeeksforGeeks',
+      stats: {
+        problems: '300+',
+        score: '1500',
+        rank: 'Top 10%'
+      },
+      url: 'https://www.geeksforgeeks.org/user/GeeksforGeeks',
+      color: '#2F8D46'
     }
   ]);
 
