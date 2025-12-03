@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import CodingProfile from './pages/CodingProfile/CodingProfile';
+import Certifications from './pages/Certifications/Certifications';
 import Contact from './pages/Contact/Contact';
 import './App.css';
 
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div id="coding-profile">
         <CodingProfile />
+      </div>
+      <div id="certifications">
+        <Certifications />
       </div>
       <div id="contact">
         <Contact />
