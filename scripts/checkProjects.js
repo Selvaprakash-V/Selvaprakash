@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const Project = require('./models/Project');
-require('dotenv').config();
+const Project = require('../backend/models/Project');
+require('dotenv').config({ path: '../config/.env' });
 
 async function checkProjects() {
   try {

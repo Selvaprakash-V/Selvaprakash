@@ -2,14 +2,15 @@
   "name": "mern-portfolio",
   "version": "1.0.0",
   "description": "MERN Stack Portfolio Application",
-  "main": "backend/server/server.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/server/server.js",
-    "server": "nodemon backend/server/server.js",
-    "client": "npm start --prefix frontend/client",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-all": "npm install && cd frontend/client && npm install",
-    "seed": "node backend/server/seed.js"
+    "install-all": "npm install && cd frontend && npm install",
+    "seed": "node scripts/seed.js",
+    "check-projects": "node scripts/checkProjects.js"
   },
   "keywords": [
     "portfolio",

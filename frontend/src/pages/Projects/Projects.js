@@ -14,11 +14,9 @@ const Projects = () => {
   const fetchProjects = async () => {
     try {
       const response = await projectService.getAll();
-      console.log('API Response:', response.data);
       setProjects(response.data);
       setLoading(false);
     } catch (err) {
-      console.error('Error fetching projects:', err);
       setLoading(false);
       // Sample data for fallback
       setProjects([
