@@ -42,19 +42,73 @@
 }
 
 .hero-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
   position: relative;
   z-index: 1;
 }
 
-.avatar-container {
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.hero-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.hero-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(92, 225, 230, 0.3);
+  border: 2px solid rgba(92, 225, 230, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 80px rgba(92, 225, 230, 0.4);
+}
+
+.avatar-container {
+  display: none;
 }
 
 .avatar {
@@ -126,40 +180,114 @@
   50% { opacity: 0.5; }
 }
 
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  animation: fadeInUp 1s ease-out;
+.hero-intro {
+  margin: 0;
+  max-width: 100%;
+  text-align: left;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+.hero-welcome {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+}
+
+.welcome-line {
+  width: 140px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
+  border-radius: 999px;
+  animation: glowLine 1.8s ease-in-out infinite alternate;
+}
+
+.welcome-svg {
+  height: 52px;
+  overflow: visible;
+}
+
+.welcome-svg svg {
+  height: 100%;
+  width: 240px;
+}
+
+.welcome-outline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  fill: transparent;
+  stroke: var(--text-primary);
+  stroke-width: 2px;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  animation: drawWelcome 2.4s ease forwards;
+  letter-spacing: 2px;
+}
+
+@keyframes drawWelcome {
+  to {
+    stroke-dashoffset: 0;
   }
+}
+
+@keyframes glowLine {
+  from { box-shadow: 0 0 12px rgba(92, 225, 230, 0.6); }
+  to { box-shadow: 0 0 20px rgba(92, 225, 230, 0.9); }
+}
+
+.hero-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  font-size: 1.35rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.word {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: wordFade 0.45s ease forwards;
+  animation-delay: calc(var(--i) * 0.07s);
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes wordFade {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.hero-description {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-  margin-bottom: 2.5rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.8;
-}
-
 .hero-cta {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-photo {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .hero-words {
+    font-size: 1.2rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -167,12 +295,17 @@
     padding: 5rem 1.5rem 3rem;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
+  .hero-content {
+    grid-template-columns: 1fr;
   }
 
-  .hero-description {
-    font-size: 1rem;
+  .profile-photo {
+    max-width: 280px;
+  }
+
+  .hero-words {
+    font-size: 1.05rem;
+    gap: 0.35rem;
   }
 
   .hero-cta {

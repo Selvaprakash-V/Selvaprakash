@@ -32,7 +32,7 @@ const LocationMap = () => {
           <div className="avatar-marker">
             <div className="avatar-glow"></div>
             <div className="avatar-circle">
-              <span className="avatar-emoji">👨‍💻</span>
+              <span className="avatar-emoji"></span>
             </div>
           </div>
         </div>

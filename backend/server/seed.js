@@ -100,7 +100,7 @@ async function seedDatabase() {
 
     // Clear existing projects
     await Project.deleteMany({});
-    console.log('🗑️  Cleared existing projects');
+    console.log('Cleared existing projects');
 
     // Insert new projects
     const insertedProjects = await Project.insertMany(projects);

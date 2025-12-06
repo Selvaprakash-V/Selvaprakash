@@ -2,42 +2,79 @@ import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
+  const profilePhoto = '/images/profile/profile.png';
+  const introWords = [
+    'Hi,',
+    "I'm",
+    'Selvaprakash',
+    'V,',
+    'a',
+    'full-stack',
+    'developer',
+    'from',
+    'Coimbatore,',
+    'India.',
+    'I',
+    'craft',
+    'clean,',
+    'scalable',
+    'web',
+    'apps',
+    'and',
+    'APIs',
+    'with',
+    'a',
+    'focus',
+    'on',
+    'great',
+    'UX',
+    'and',
+    'reliable',
+    'delivery.'
+  ];
+
   return (
     <section className="hero">
       <div className="stars"></div>
       <div className="hero-container">
         <div className="hero-content">
-          <div className="avatar-container">
-            <div className="avatar">
-              <div className="avatar-image">👨‍💻</div>
-            </div>
-            <div className="status-badge">
-              <span className="status-dot"></span>
-              Available for new projects
-            </div>
+          <div className="hero-column hero-left">
+            <img src={profilePhoto} alt="Selvaprakash V" className="profile-photo" />
           </div>
 
-          <h1 className="hero-title">
-            Building Scalable
-            <br />
-            <span className="gradient-text">Software Solutions</span>
-          </h1>
+          <div className="hero-column hero-right">
+            <div className="hero-intro">
+              <div className="hero-welcome" aria-hidden="true">
+                <div className="welcome-line" />
+                <div className="welcome-svg" role="presentation">
+                  <svg viewBox="0 0 600 130" aria-hidden="true">
+                    <text x="0" y="90" className="welcome-outline">WELCOME</text>
+                  </svg>
+                </div>
+              </div>
+              <div className="hero-words" aria-label="Introduction">
+                {introWords.map((word, index) => (
+                  <span
+                    key={`${word}-${index}`}
+                    className="word"
+                    style={{ '--i': index }}
+                  >
+                    {word}
+                  </span>
+                ))}
+              </div>
+            </div>
 
-          <p className="hero-description">
-            Senior Software Engineer specializing in full-stack development, scalable
-            backend solutions, and performance optimization. I build robust, scalable
-            applications that solve complex business challenges.
-          </p>
-
-          <div className="hero-cta">
-            <a href="#projects" className="btn btn-primary">
-              <span className="btn-icon">🚀</span>
-              Explore my work
-            </a>
-            <a href="#contact" className="btn btn-secondary">
-              <span className="btn-icon">👋</span>
-              Let's connect
-            </a>
+            <div className="hero-cta">
+              <a href="#projects" className="btn btn-primary">
+                <span className="btn-icon">→</span>
+                Explore my work
+              </a>
+              <a href="#contact" className="btn btn-secondary">
+                <span className="btn-icon">↗</span>
+                Let's connect
+              </a>
+            </div>
           </div>
         </div>
       </div>

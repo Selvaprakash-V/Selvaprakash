@@ -21,7 +21,7 @@ exports.getAbout = async (req, res) => {
           { name: 'Firebase', category: 'database' },
         ],
         interests: [
-          { name: 'Traveling', icon: '✈️' },
+          { name: 'Traveling', icon: '' },
           { name: 'Basketball', icon: '🏀' },
           { name: 'Running', icon: '🏃' },
           { name: 'Gaming', icon: '🎮' },

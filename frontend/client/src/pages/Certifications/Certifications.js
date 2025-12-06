@@ -2,76 +2,123 @@ import React from 'react';
 import './Certifications.css';
 
 const Certifications = () => {
-  const certifications = [
+  const certificates = [
     {
+      id: 1,
+      title: 'Mastering Data Structures & Algorithms using C and C++',
+      provider: 'Udemy',
+      instructor: 'Abdul Bari',
+      completed: 'July 8, 2025',
+      skills: ['Data Structures', 'Algorithms', 'C', 'C++'],
+      extra: '76 hours total training',
+      icon: null,
+      file: '/images/certificates/CertificateFor mastering data steucture & algorithms.pdf'
+    },
+    {
+      id: 2,
+      title: 'Certificate for the Completion of C++ Training',
+      provider: 'Spoken Tutorial Project, IIT Bombay',
+      completed: 'December 20, 2024',
+      skills: ['C++ Programming'],
+      extra: 'Score 95%, Credits: 2 (Online proctored exam)',
+      icon: null,
+      file: '/images/certificates/CertificateForCompletionOfC++trainingByIITBombay.pdf'
+    },
+    {
+      id: 3,
+      title: 'Certificate for the Completion of C Training',
+      provider: 'Spoken Tutorial Project, IIT Bombay',
+      completed: 'December 20, 2024',
+      skills: ['C Programming'],
+      extra: 'Score 67.5%, Credits: 2 (Online proctored exam)',
+      icon: null,
+      file: '/images/certificates/CertificateForCompletionOfCtrainingByIITBombay.pdf'
+    },
+    {
+      id: 4,
       title: 'Machine Learning using Python Programming',
       provider: 'Udemy',
-      year: '2025',
-      icon: '🤖',
-      category: 'Machine Learning'
+      instructor: 'Sujithkumar MA',
+      completed: 'Aug 25, 2025',
+      skills: ['Machine Learning', 'Python'],
+      extra: '8 hours',
+      icon: null,
+      file: '/images/certificates/machine learning using python programming.pdf'
     },
     {
-      title: 'Complete Web Development Course (Basic To Advanced)',
+      id: 5,
+      title: 'n8n Course: No Code AI Agent Builder',
+      provider: 'AI-GPTWWorkshop (YouTube)',
+      completed: 'Dec 6, 2025',
+      skills: ['No-Code AI Agents', 'n8n Integration'],
+      extra: 'Certificate Code: 9538920',
+      icon: null,
+      file: '/images/certificates/n8n course.pdf'
+    },
+    {
+      id: 6,
+      title: 'Power BI Mastery: Zero to Hero Data Skills',
       provider: 'Udemy',
-      year: '2025',
-      icon: '🌐',
-      category: 'Web Development'
+      instructor: 'Meta Brains',
+      completed: 'March 2, 2025',
+      skills: ['Power BI', 'Data Skills'],
+      extra: '6.5 hours',
+      icon: null,
+      file: '/images/certificates/power bi mastery.pdf'
     },
     {
-      title: 'Python for Data Science',
+      id: 7,
+      title: 'Python for Data Science Pro: The Complete Mastery Course',
       provider: 'Udemy',
-      year: '2025',
-      icon: '🐍',
-      category: 'Data Science'
+      instructor: 'Sara Academy',
+      completed: 'Feb 13, 2025',
+      skills: ['Python', 'Data Science Basics'],
+      extra: '4 hours',
+      icon: null,
+      file: '/images/certificates/python for data science pro.pdf'
     },
     {
-      title: 'Power BI Mastery',
-      provider: 'Udemy',
-      year: '2025',
-      icon: '📊',
-      category: 'Business Intelligence'
-    },
-    {
-      title: 'Data Visualization with Power BI',
-      provider: 'Great Learning',
-      year: '2025',
-      icon: '📈',
-      category: 'Data Visualization'
-    },
-    {
+      id: 8,
       title: 'Python Programming Masterclass',
       provider: 'Udemy',
-      year: '2025',
-      icon: '💻',
-      category: 'Programming'
+      instructor: 'Makeintern Course',
+      completed: 'Feb 17, 2025',
+      skills: ['Python Programming'],
+      extra: '2.5 hours',
+      icon: null,
+      file: '/images/certificates/python programming Masterclass.pdf'
     },
     {
-      title: 'MySQL Database Development and Administration using C and C++',
+      id: 9,
+      title: 'SQL (Basic)',
+      provider: 'HackerRank',
+      completed: 'Nov 6, 2025',
+      skills: ['SQL Querying'],
+      extra: 'Certification ID: 7IEB45A9FF20',
+      icon: null,
+      file: '/images/certificates/sql_basic certificate.pdf'
+    },
+    {
+      id: 10,
+      title: 'The Complete Java Programmer: From Scratch to Advanced',
       provider: 'Udemy',
-      year: '2024',
-      icon: '🗄️',
-      category: 'Database'
+      instructor: 'Sujithkumar MA',
+      completed: 'Sept 29, 2025',
+      skills: ['Java Development'],
+      extra: '9 hours',
+      icon: null,
+      file: '/images/certificates/the complete java programmer.pdf'
     },
     {
-      title: 'Prompt Engineering Zero To Hero',
+      id: 11,
+      title: 'Prompt Engineering PRO (AI Prompt Engineering FAST-TRACK)',
       provider: 'Udemy',
-      year: '2024',
-      icon: '🚀',
-      category: 'AI/ML'
-    },
-    {
-      title: 'C++ Training - Spoken Tutorials',
-      provider: 'IIT Bombay',
-      year: '2024',
-      icon: '⚡',
-      category: 'Programming'
-    },
-    {
-      title: 'C for Beginners',
-      provider: 'Great Learning',
-      year: '2024',
-      icon: '©️',
-      category: 'Programming'
+      instructor: 'ExpertEase Education',
+      completed: 'July 21, 2025',
+      skills: ['Prompt Engineering', 'AI Prompt Engineering'],
+      extra: '2 hours total',
+      icon: null,
+      file: '/images/certificates/Prompt Engineering PRO.pdf'
     }
   ];
 
@@ -80,91 +127,103 @@ const Certifications = () => {
       title: 'Freshdesku Competition',
       description: 'Secured 2nd place',
       year: '2025',
-      icon: '🥈'
+      icon: null
     },
     {
       title: 'Createthon Competition',
       description: 'Secured 3rd place',
       year: '2024',
-      icon: '🥉'
+      icon: null
     },
     {
       title: 'CodeLog Competition',
       description: 'Achieved 3rd place (Skillrack) during first semester',
       year: '2024',
-      icon: '🏆'
+      icon: null
     },
     {
       title: 'CodeLog Competition',
       description: 'Achieved 2nd place (Skillrack) during second semester',
       year: '2025',
-      icon: '🥈'
+      icon: null
     },
     {
       title: 'SICPC Contest',
       description: 'Participated and qualified up to regional round',
       year: '2025',
-      icon: '🎯'
+      icon: null
     }
   ];
-
-  const groupedCerts = certifications.reduce((acc, cert) => {
-    if (!acc[cert.category]) {
-      acc[cert.category] = [];
-    }
-    acc[cert.category].push(cert);
-    return acc;
-  }, {});
 
   return (
     <section className="certifications-page">
       <div className="certifications-header">
-        <span className="section-label">PROFESSIONAL DEVELOPMENT</span>
-        <h1>Certifications & Achievements</h1>
-        <p>Continuous learning and recognition of excellence</p>
+        <h1>Certifications</h1>
+        <p>Professional development and continuous learning</p>
       </div>
 
       <div className="certifications-content">
-        {/* Certifications Section */}
-        <div className="certs-section">
+        {/* Certificates Grid */}
+        <div className="certificates-section">
           <h2 className="section-title">
-            <span className="title-icon">📜</span>
-            Professional Certifications
+            <span>Certifications</span>
           </h2>
           
-          {Object.entries(groupedCerts).map(([category, certs]) => (
-            <div key={category} className="cert-category">
-              <h3 className="category-title">{category}</h3>
-              <div className="certs-grid">
-                {certs.map((cert, index) => (
-                  <div key={index} className="cert-card">
-                    <div className="cert-icon">{cert.icon}</div>
-                    <div className="cert-content">
-                      <h4 className="cert-title">{cert.title}</h4>
-                      <div className="cert-meta">
-                        <span className="cert-provider">{cert.provider}</span>
-                        <span className="cert-year">{cert.year}</span>
-                      </div>
+          <div className="certificates-grid">
+            {certificates.map((cert) => (
+              <div key={cert.id} className="certificate-card">
+                <div className="certificate-header">
+                  {cert.icon && <span className="certificate-icon">{cert.icon}</span>}
+                  <h3 className="certificate-title">{cert.title}</h3>
+                </div>
+
+                <div className="certificate-body">
+                  <div className="certificate-provider">{cert.provider}</div>
+                  {cert.instructor && (
+                    <div className="certificate-instructor">Instructor: {cert.instructor}</div>
+                  )}
+                  
+                  <div className="certificate-completed">Completed: {cert.completed}</div>
+
+                  {cert.skills && cert.skills.length > 0 && (
+                    <div className="certificate-skills">
+                      {cert.skills.map((skill, index) => (
+                        <span key={index} className="skill-tag">{skill}</span>
+                      ))}
                     </div>
-                  </div>
-                ))}
+                  )}
+
+                  {cert.extra && (
+                    <div className="certificate-extra">{cert.extra}</div>
+                  )}
+                </div>
+
+                <div className="certificate-footer">
+                  <a
+                    href={cert.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="certificate-btn"
+                  >
+                    View Certificate →
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Achievements Section */}
         <div className="achievements-section">
           <h2 className="section-title">
-            <span className="title-icon">🏆</span>
-            Competition Achievements
+            <span>Competition Achievements</span>
           </h2>
           
           <div className="achievements-timeline">
             {achievements.map((achievement, index) => (
               <div key={index} className="achievement-item">
                 <div className="achievement-icon-wrapper">
-                  <span className="achievement-icon">{achievement.icon}</span>
+                  {achievement.icon && <span className="achievement-icon">{achievement.icon}</span>}
                 </div>
                 <div className="achievement-content">
                   <h4 className="achievement-title">{achievement.title}</h4>

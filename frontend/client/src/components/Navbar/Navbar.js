@@ -11,7 +11,7 @@ const Navbar = () => {
       setScrolled(window.scrollY > 50);
 
       // Detect active section
-      const sections = ['home', 'projects', 'about', 'coding-profile', 'certifications', 'contact'];
+      const sections = ['home', 'projects', 'coding-profile', 'certifications', 'about', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -30,9 +30,9 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home', icon: '🏠' },
     { name: 'Projects', href: '#projects', icon: '💼' },
-    { name: 'About', href: '#about', icon: '👤' },
     { name: 'Coding Profile', href: '#coding-profile', icon: '💻' },
     { name: 'Certifications', href: '#certifications', icon: '📜' },
+    { name: 'About', href: '#about', icon: '👤' },
     { name: 'Contact', href: '#contact', icon: '📧' },
   ];
 
@@ -49,7 +49,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <a href="#home" className="navbar-logo" onClick={(e) => scrollToSection(e, '#home')}>
-          <span className="logo-icon">💻</span>
+          <span className="logo-icon">◆</span>
           <span className="logo-text">Portfolio</span>
         </a>
 

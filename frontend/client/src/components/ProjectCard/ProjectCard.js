@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
           <img src={image} alt={title} />
         ) : (
           <div className="project-placeholder">
-            <span>📱</span>
+            <span></span>
           </div>
         )}
       </div>
@@ -40,21 +40,21 @@ const ProjectCard = ({ project }) => {
           {liveUrl && (
             <a 
               href={liveUrl} 
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              <span>🔗</span> Live Demo
+              <span></span> Live Demo
             </a>
           )}
           {githubUrl && (
             <a 
               href={githubUrl} 
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
-              className="project-link github-link"
+              className="project-link"
             >
-              <span>💻</span> GitHub
+              <span></span> GitHub
             </a>
           )}
         </div>

@@ -136,17 +136,17 @@ const CodingProfile = () => {
           <h2>Notable Achievements</h2>
           <div className="achievements-grid">
             <div className="achievement-card">
-              <span className="achievement-icon">🏆</span>
+              <span className="achievement-icon">◆</span>
               <h3>Contest Winner</h3>
               <p>Won multiple coding competitions and hackathons</p>
             </div>
             <div className="achievement-card">
-              <span className="achievement-icon">⭐</span>
+              <span className="achievement-icon">★</span>
               <h3>Top Contributor</h3>
               <p>Active contributor to popular open source projects</p>
             </div>
             <div className="achievement-card">
-              <span className="achievement-icon">📈</span>
+              <span className="achievement-icon">▲</span>
               <h3>Problem Solver</h3>
               <p>Solved 1000+ algorithmic challenges across platforms</p>
             </div>
