@@ -1,5 +1,6 @@
 import React from 'react';
 import './Certifications.css';
+import CertificationCarousel from '../../components/CertificationCarousel/CertificationCarousel';
 
 const Certifications = () => {
   const certificates = [
@@ -122,39 +123,6 @@ const Certifications = () => {
     }
   ];
 
-  const achievements = [
-    {
-      title: 'Freshdesku Competition',
-      description: 'Secured 2nd place',
-      year: '2025',
-      icon: null
-    },
-    {
-      title: 'Createthon Competition',
-      description: 'Secured 3rd place',
-      year: '2024',
-      icon: null
-    },
-    {
-      title: 'CodeLog Competition',
-      description: 'Achieved 3rd place (Skillrack) during first semester',
-      year: '2024',
-      icon: null
-    },
-    {
-      title: 'CodeLog Competition',
-      description: 'Achieved 2nd place (Skillrack) during second semester',
-      year: '2025',
-      icon: null
-    },
-    {
-      title: 'SICPC Contest',
-      description: 'Participated and qualified up to regional round',
-      year: '2025',
-      icon: null
-    }
-  ];
-
   return (
     <section className="certifications-page">
       <div className="certifications-header">
@@ -163,77 +131,8 @@ const Certifications = () => {
       </div>
 
       <div className="certifications-content">
-        {/* Certificates Grid */}
-        <div className="certificates-section">
-          <h2 className="section-title">
-            <span>Certifications</span>
-          </h2>
-          
-          <div className="certificates-grid">
-            {certificates.map((cert) => (
-              <div key={cert.id} className="certificate-card">
-                <div className="certificate-header">
-                  {cert.icon && <span className="certificate-icon">{cert.icon}</span>}
-                  <h3 className="certificate-title">{cert.title}</h3>
-                </div>
-
-                <div className="certificate-body">
-                  <div className="certificate-provider">{cert.provider}</div>
-                  {cert.instructor && (
-                    <div className="certificate-instructor">Instructor: {cert.instructor}</div>
-                  )}
-                  
-                  <div className="certificate-completed">Completed: {cert.completed}</div>
-
-                  {cert.skills && cert.skills.length > 0 && (
-                    <div className="certificate-skills">
-                      {cert.skills.map((skill, index) => (
-                        <span key={index} className="skill-tag">{skill}</span>
-                      ))}
-                    </div>
-                  )}
-
-                  {cert.extra && (
-                    <div className="certificate-extra">{cert.extra}</div>
-                  )}
-                </div>
-
-                <div className="certificate-footer">
-                  <a
-                    href={cert.file}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="certificate-btn"
-                  >
-                    View Certificate →
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Achievements Section */}
-        <div className="achievements-section">
-          <h2 className="section-title">
-            <span>Competition Achievements</span>
-          </h2>
-          
-          <div className="achievements-timeline">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="achievement-item">
-                <div className="achievement-icon-wrapper">
-                  {achievement.icon && <span className="achievement-icon">{achievement.icon}</span>}
-                </div>
-                <div className="achievement-content">
-                  <h4 className="achievement-title">{achievement.title}</h4>
-                  <p className="achievement-description">{achievement.description}</p>
-                  <span className="achievement-year">{achievement.year}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* 3D Carousel Highlight */}
+        <CertificationCarousel certificates={certificates} />
       </div>
     </section>
   );
