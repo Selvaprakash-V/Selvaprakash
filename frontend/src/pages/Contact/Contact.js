@@ -38,8 +38,8 @@ const Contact = () => {
     <section className="contact-page">
       <div className="contact-container">
         <div className="contact-header">
-          <h1>Let's Connect</h1>
-          <p>Have a project in mind? Let's discuss your technical requirements.</p>
+          <h1>Contact</h1>
+          <p>Have a project in mind? I'm happy to discuss your technical requirements.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="contact-form">
