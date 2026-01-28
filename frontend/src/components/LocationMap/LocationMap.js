@@ -40,7 +40,7 @@ const LocationMap = () => {
         {/* Location Details */}
         <div className="location-details">
           <div className="location-info">
-            <div className="location-pin-icon">📍</div>
+            <div className="location-pin-icon"></div>
             <div className="location-text">
               <h3>{location.name}</h3>
               <p>{location.country}</p>
@@ -53,7 +53,7 @@ const LocationMap = () => {
             rel="noopener noreferrer"
             className="view-map-btn"
           >
-            View Location →
+            View Location
           </a>
         </div>
       </div>

@@ -6,7 +6,6 @@ import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import CodingProfile from './pages/CodingProfile/CodingProfile';
 import Certifications from './pages/Certifications/Certifications';
-import Contact from './pages/Contact/Contact';
 import './App.css';
 
 function App() {
@@ -28,9 +27,6 @@ function App() {
       </div>
       <div id="about">
         <About />
-      </div>
-      <div id="contact">
-        <Contact />
       </div>
     </div>
   );

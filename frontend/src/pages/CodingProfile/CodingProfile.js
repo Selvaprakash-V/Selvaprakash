@@ -17,7 +17,7 @@ const CodingProfile = () => {
     },
     {
       platform: 'GitHub',
-      icon: '⚫',
+      icon: '',
       username: '@Selvaprakash-V',
       stats: {
         repos: '50+',
@@ -29,10 +29,10 @@ const CodingProfile = () => {
     },
     {
       platform: 'HackerRank',
-      icon: '🟢',
+      icon: '',
       username: '@selvaprakashv007',
       stats: {
-        stars: '5 ⭐',
+        stars: '5 stars',
         rank: 'Gold',
         badges: '25+'
       },
@@ -45,7 +45,7 @@ const CodingProfile = () => {
       username: '@selvaprakashv',
       stats: {
         rating: '1850',
-        stars: '4 ⭐',
+        stars: '4 stars',
         rank: 'Global 5k'
       },
       url: 'https://www.codechef.com/users/selvaprakashv',
@@ -65,7 +65,7 @@ const CodingProfile = () => {
     },
     {
       platform: 'LinkedIn',
-      icon: '💼',
+      icon: '',
       username: '@selvaprakashv007',
       stats: {
         connections: '500+',
@@ -77,7 +77,7 @@ const CodingProfile = () => {
     },
     {
       platform: 'GeeksforGeeks',
-      icon: '🟢',
+      icon: '',
       username: '@GeeksforGeeks',
       stats: {
         problems: '300+',
@@ -126,7 +126,7 @@ const CodingProfile = () => {
               </div>
 
               <div className="profile-link">
-                View Profile →
+                View Profile
               </div>
             </a>
           ))}
@@ -136,17 +136,17 @@ const CodingProfile = () => {
           <h2>Notable Achievements</h2>
           <div className="achievements-grid">
             <div className="achievement-card">
-              <span className="achievement-icon">◆</span>
+              <span className="achievement-icon"></span>
               <h3>Contest Winner</h3>
               <p>Won multiple coding competitions and hackathons</p>
             </div>
             <div className="achievement-card">
-              <span className="achievement-icon">★</span>
+              <span className="achievement-icon"></span>
               <h3>Top Contributor</h3>
               <p>Active contributor to popular open source projects</p>
             </div>
             <div className="achievement-card">
-              <span className="achievement-icon">▲</span>
+              <span className="achievement-icon"></span>
               <h3>Problem Solver</h3>
               <p>Solved 1000+ algorithmic challenges across platforms</p>
             </div>

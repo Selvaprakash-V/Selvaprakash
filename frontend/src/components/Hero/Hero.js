@@ -67,11 +67,9 @@ const Hero = () => {
 
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary">
-                <span className="btn-icon">→</span>
                 Explore my work
               </a>
               <a href="#contact" className="btn btn-secondary">
-                <span className="btn-icon">↗</span>
                 Contact me
               </a>
             </div>
