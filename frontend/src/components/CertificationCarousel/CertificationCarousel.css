@@ -1,24 +1,17 @@
 .cert-carousel-wrapper {
   max-width: 1200px;
   margin: 0 auto 4rem;
-  padding: 2.5rem 2rem 3rem;
-  border-radius: 24px;
+  padding: 1rem 0 2rem;
+  border-radius: 0;
   position: relative;
-  background: radial-gradient(circle at top left, rgba(92, 225, 230, 0.18), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(159, 122, 234, 0.18), transparent 55%),
-    rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.7);
-  overflow: hidden;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .cert-carousel-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top, rgba(148, 163, 255, 0.12), transparent 65%);
-  opacity: 0.6;
-  pointer-events: none;
+  content: none;
 }
 
 .cert-carousel-header {
@@ -51,7 +44,7 @@
   position: relative;
   width: 100%;
   max-width: 900px;
-  height: 320px;
+  height: 420px;
   margin: 0 auto;
   perspective: 1400px;
   overflow: visible;
@@ -70,8 +63,8 @@
   left: 50%;
   transform-origin: center center;
   transform-style: preserve-3d;
-  width: 320px;
-  padding: 1.4rem 1.5rem;
+  width: 420px;
+  padding: 1.8rem 1.8rem;
   border-radius: 18px;
   background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.9));
   border: 1px solid rgba(148, 163, 184, 0.45);
@@ -228,12 +221,12 @@
 
 @media (max-width: 900px) {
   .cert-carousel-viewport {
-    height: 280px;
+    height: 360px;
   }
 
   .cert-carousel-card {
-    width: 260px;
-    padding: 1.2rem 1.3rem;
+    width: 320px;
+    padding: 1.4rem 1.4rem;
   }
 }
 
@@ -249,7 +242,7 @@
 
   .cert-carousel-viewport {
     max-width: 100%;
-    height: 260px;
+    height: 320px;
   }
 
   .cert-carousel-nav {
@@ -260,12 +253,12 @@
 
 @media (max-width: 640px) {
   .cert-carousel-viewport {
-    height: 240px;
+    height: 300px;
   }
 
   .cert-carousel-card {
-    width: 230px;
-    padding: 1.1rem 1.1rem;
+    width: 280px;
+    padding: 1.2rem 1.2rem;
   }
 
   .cert-carousel-header h2 {
