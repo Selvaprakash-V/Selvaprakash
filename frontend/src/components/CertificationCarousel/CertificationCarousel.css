@@ -48,6 +48,16 @@
   margin: 0 auto;
   perspective: 1400px;
   overflow: visible;
+  background: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.85) 0%, transparent 65%);
+}
+
+.cert-carousel-viewport::before {
+  content: "";
+  position: absolute;
+  inset: 55% -40% -10%;
+  background: radial-gradient(ellipse at bottom, rgba(15, 23, 42, 0.95) 0%, transparent 70%);
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .cert-carousel-3d {
@@ -96,8 +106,9 @@
 }
 
 .cert-carousel-card-active {
-  box-shadow: 0 26px 60px rgba(56, 189, 248, 0.25);
-  border-color: rgba(56, 189, 248, 0.8);
+  box-shadow: 0 30px 80px rgba(56, 189, 248, 0.35);
+  border-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(145deg, rgba(30, 64, 175, 0.98), rgba(15, 23, 42, 0.98));
 }
 
 .cert-carousel-card-active::before {

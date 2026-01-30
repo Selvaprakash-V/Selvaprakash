@@ -55,11 +55,13 @@ const CertificationCarousel = ({ certificates, visible = 5 }) => {
               if (Math.abs(position) > maxVisible) return null;
 
               const depth = Math.abs(position);
-              const translateX = position * 160;
-              const rotateY = position * -18;
-              const translateZ = -depth * 80;
-              const scale = 1 - depth * 0.08;
-              const opacity = 1 - depth * 0.18;
+              const isActive = position === 0;
+              const translateX = position * 260;
+              const rotateY = position * -45;
+              const translateZ = isActive ? 140 : -depth * 140;
+              const translateY = depth * 10;
+              const scale = isActive ? 1.08 : 1 - depth * 0.06;
+              const opacity = isActive ? 1 : Math.max(0, 1 - depth * 0.28);
 
               const zIndex = maxVisible - depth;
 
@@ -73,7 +75,7 @@ const CertificationCarousel = ({ certificates, visible = 5 }) => {
                     position === 0 ? 'cert-carousel-card-active' : ''
                   }`}
                   style={{
-                    transform: `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
+                    transform: `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
                     opacity,
                     zIndex,
                   }}
