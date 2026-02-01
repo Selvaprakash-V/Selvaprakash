@@ -19,9 +19,6 @@ Required environment variables:
 - `PORT` - Backend server port (default: 5000)
 - `MONGODB_URI` - MongoDB connection string
 - `NODE_ENV` - Environment (development/production)
-- `EMAIL_USER` - Gmail address for sending emails
-- `EMAIL_APP_PASSWORD` - Gmail app password
-- `RECIPIENT_EMAIL` - Email to receive contact form submissions
 
 ### 3. Start MongoDB
 Make sure MongoDB is running on your system:
@@ -50,10 +47,9 @@ This will start:
 ## 📁 Project Structure
 
 ```
-├── frontend/       # React app
+├── frontend/       # React app (images in public/images/)
 ├── backend/        # Express API
-├── assets/         # Images & static files
-├── config/         # Environment & config
+├── config/         # Environment variables
 ├── docs/           # Documentation
 └── scripts/        # Utility scripts
 ```
@@ -88,16 +84,11 @@ This will start:
 - Change `PORT` in `config/.env`
 - Or kill the process using the port
 
-### Email Not Sending
-- Check Gmail app password setup
-- See `docs/EMAIL_SETUP.md` for details
-
 ## 📚 Documentation
 
 - `docs/FRONTEND.md` - Frontend documentation
 - `docs/BACKEND.md` - Backend API documentation
 - `docs/DATABASE.md` - Database setup
-- `docs/EMAIL_SETUP.md` - Email configuration
 - `docs/MAPS_SETUP.md` - Maps integration
 
 ## ✅ Verification
@@ -110,9 +101,8 @@ After starting the servers, verify:
 ## 🎯 Next Steps
 
 1. Customize content in the database
-2. Update profile image in `assets/images/profile/`
+2. Update profile image in `frontend/public/images/profile/`
 3. Add your projects via the API or seed script
-4. Configure email settings for contact form
-5. Deploy to production
+4. Deploy to production
 
 For detailed information, see the main [README.md](README.md)

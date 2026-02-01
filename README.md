@@ -7,7 +7,7 @@ A modern, full-stack portfolio website built with MongoDB, Express, React, and N
 - Responsive design with dark theme
 - Dynamic project showcase
 - About section with skills and interests
-- Contact form with email notifications
+- Contact form
 - Certifications and achievements display
 - Coding profile section
 - Admin panel for content management
@@ -27,7 +27,6 @@ A modern, full-stack portfolio website built with MongoDB, Express, React, and N
 - Node.js
 - Express.js 4
 - MongoDB with Mongoose
-- Nodemailer for email
 - CORS enabled
 - RESTful API
 
@@ -41,29 +40,23 @@ A modern, full-stack portfolio website built with MongoDB, Express, React, and N
 │   │   ├── services/     # API service layer
 │   │   ├── App.js        # Main app component
 │   │   └── index.js      # Entry point
-│   ├── public/           # Static files
+│   ├── public/           # Static files & images
 │   └── package.json      # Frontend dependencies
 │
 ├── backend/              # Express backend API
-│   ├── config/          # Configuration files
 │   ├── controllers/     # Route controllers
 │   ├── models/          # Mongoose models
 │   ├── routes/          # API routes
 │   └── server.js        # Server entry point
 │
-├── assets/              # Static assets
-│   └── images/          # Images, certificates, profile
-│
 ├── config/              # Configuration files
 │   ├── .env             # Environment variables
-│   ├── .env.example     # Environment template
-│   └── .gitignore       # Git ignore rules
+│   └── .env.example     # Environment template
 │
 ├── docs/                # Documentation
 │   ├── BACKEND.md       # Backend documentation
 │   ├── FRONTEND.md      # Frontend documentation
 │   ├── DATABASE.md      # Database setup guide
-│   ├── EMAIL_SETUP.md   # Email configuration
 │   └── MAPS_SETUP.md    # Maps integration guide
 │
 ├── scripts/             # Utility scripts
@@ -96,9 +89,6 @@ A modern, full-stack portfolio website built with MongoDB, Express, React, and N
    PORT=5000
    MONGODB_URI=mongodb://localhost:27017/portfolio
    NODE_ENV=development
-   EMAIL_USER=your_gmail@gmail.com
-   EMAIL_APP_PASSWORD=your_app_password
-   RECIPIENT_EMAIL=your_email@gmail.com
    ```
 
 4. Seed the database (optional):
@@ -146,7 +136,6 @@ The backend will run on http://localhost:5000 and the frontend on http://localho
 - cors - CORS middleware
 - dotenv - Environment variables
 - body-parser - Request body parsing
-- nodemailer - Email sending
 - nodemon - Development auto-reload
 - concurrently - Run multiple commands
 
