@@ -33,11 +33,6 @@ const CertificationCarousel = ({ certificates, visible = 5 }) => {
 
   return (
     <div className="cert-carousel-wrapper">
-      <div className="cert-carousel-header">
-        <h2>Featured Certifications</h2>
-        <p>Hover, tilt and navigate through key achievements</p>
-      </div>
-
       <div className="cert-carousel-container">
         <button
           className="cert-carousel-nav cert-carousel-nav-left"

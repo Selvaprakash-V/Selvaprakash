@@ -1,7 +1,7 @@
 .cert-carousel-wrapper {
   max-width: 1200px;
   margin: 0 auto 4rem;
-  padding: 1rem 0 2rem;
+  padding: 2rem 0;
   border-radius: 0;
   position: relative;
   background: transparent;
@@ -38,6 +38,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .cert-carousel-viewport {
@@ -177,8 +179,8 @@
 .cert-carousel-nav {
   position: relative;
   z-index: 10;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.7);
   background: rgba(15, 23, 42, 0.9);
@@ -187,7 +189,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 0 0.75rem;
+  flex-shrink: 0;
   box-shadow: 0 6px 16px rgba(15, 23, 42, 0.8);
   transition: all 0.25s ease;
 }
@@ -243,12 +245,13 @@
 
 @media (max-width: 768px) {
   .cert-carousel-wrapper {
-    padding: 1.8rem 1.2rem 2.3rem;
+    padding: 1.5rem 0.5rem;
     margin-bottom: 3rem;
   }
 
   .cert-carousel-container {
-    gap: 0.35rem;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
   }
 
   .cert-carousel-viewport {
