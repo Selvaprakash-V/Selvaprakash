@@ -115,10 +115,6 @@ This project can be easily deployed to:
 - **GitHub**: [github.com/Selvaprakash-V](https://github.com/Selvaprakash-V)
 - **LeetCode**: [leetcode.com/u/SelvaprakashV](https://leetcode.com/u/SelvaprakashV/)
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 ⭐ If you like this portfolio, give it a star!
