@@ -1,7 +1,7 @@
 export const codingProfiles = [
   {
     platform: 'LeetCode',
-    icon: '🟠',
+    icon: '',
     username: '@SelvaprakashV',
     stats: {
       solved: '500+',
@@ -13,7 +13,7 @@ export const codingProfiles = [
   },
   {
     platform: 'GitHub',
-    icon: '🐙',
+    icon: '',
     username: '@Selvaprakash-V',
     stats: {
       repos: '50+',
@@ -25,7 +25,7 @@ export const codingProfiles = [
   },
   {
     platform: 'HackerRank',
-    icon: '💚',
+    icon: '',
     username: '@selvaprakashv007',
     stats: {
       stars: '5 stars',
@@ -37,7 +37,7 @@ export const codingProfiles = [
   },
   {
     platform: 'CodeChef',
-    icon: '🟤',
+    icon: '',
     username: '@selvaprakashv',
     stats: {
       rating: '1850',
@@ -49,7 +49,7 @@ export const codingProfiles = [
   },
   {
     platform: 'Codeforces',
-    icon: '🔵',
+    icon: '',
     username: '@SelvaprakashV',
     stats: {
       rating: '1600',
@@ -61,7 +61,7 @@ export const codingProfiles = [
   },
   {
     platform: 'LinkedIn',
-    icon: '💼',
+    icon: '',
     username: '@selvaprakashv007',
     stats: {
       connections: '500+',
@@ -73,7 +73,7 @@ export const codingProfiles = [
   },
   {
     platform: 'GeeksforGeeks',
-    icon: '💚',
+    icon: '',
     username: '@GeeksforGeeks',
     stats: {
       problems: '300+',

@@ -46,11 +46,11 @@ const Contact = () => {
 
         <div className="contact-info">
           <div className="contact-item">
-            <span className="contact-icon">📧</span>
+            <span className="contact-label">Email:</span>
             <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">📍</span>
+            <span className="contact-label">Location:</span>
             <span>{contactInfo.location}</span>
           </div>
           <div className="contact-socials">

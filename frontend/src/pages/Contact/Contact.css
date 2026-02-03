@@ -136,8 +136,9 @@
   margin-bottom: 0;
 }
 
-.contact-icon {
-  font-size: 1.25rem;
+.contact-label {
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .contact-item a {

@@ -2,11 +2,11 @@
 
 A modern, responsive portfolio website built with React.js showcasing my projects, skills, certifications, and coding profiles.
 
-## 🚀 Live Demo
+## Live Demo
 
 Visit the live site: [selvaprakash-portfolio.vercel.app](https://selvaprakash-portfolio.vercel.app)
 
-## ✨ Features
+## Features
 
 - **Responsive Design** - Fully responsive with dark theme
 - **Project Showcase** - Dynamic project gallery with live demos
@@ -16,14 +16,14 @@ Visit the live site: [selvaprakash-portfolio.vercel.app](https://selvaprakash-po
 - **Contact Form** - Easy-to-use contact functionality
 - **Smooth Animations** - Modern CSS animations and transitions
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React.js 18** - Frontend framework
 - **React Icons** - Icon library
 - **CSS3** - Styling with animations
 - **Static Data** - No backend required
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── frontend/
@@ -59,7 +59,7 @@ Visit the live site: [selvaprakash-portfolio.vercel.app](https://selvaprakash-po
 └── package.json           # Root scripts
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -99,7 +99,7 @@ npm run build
 
 The build output will be in `frontend/build/` folder, ready for deployment.
 
-## 🌐 Deployment
+## Deployment
 
 This project can be easily deployed to:
 
@@ -108,14 +108,14 @@ This project can be easily deployed to:
 - **GitHub Pages** - Use `gh-pages` package
 - **Firebase Hosting** - `firebase deploy`
 
-## 📧 Contact
+## Contact
 
 - **Email**: selvaprakashv007@gmail.com
 - **LinkedIn**: [linkedin.com/in/selvaprakashv007](https://www.linkedin.com/in/selvaprakashv007/)
 - **GitHub**: [github.com/Selvaprakash-V](https://github.com/Selvaprakash-V)
 - **LeetCode**: [leetcode.com/u/SelvaprakashV](https://leetcode.com/u/SelvaprakashV/)
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 

@@ -22,7 +22,6 @@ const About = () => {
         <div className="about-section">
           <div className="section-card">
             <h2>
-              <span className="section-icon">✨</span>
               My Reads
             </h2>
             <p>Explore the books shaping my perspectives.</p>
@@ -36,7 +35,6 @@ const About = () => {
 
           <div className="section-card">
             <h2>
-              <span className="section-icon">✨</span>
               My Toolbox
             </h2>
             <p>Explore the technologies and tools I use to craft exceptional digital experiences.</p>
@@ -58,7 +56,6 @@ const About = () => {
         <div className="about-sidebar">
           <div className="section-card">
             <h2>
-              <span className="section-icon">✨</span>
               Beyond the Code
             </h2>
             <p>Explore my interests and hobbies beyond the digital realm.</p>
