@@ -53,8 +53,8 @@ const Resume = () => {
           <div className="resume-section">
             <h2>Education</h2>
             <div className="education-item">
-              <h3>Bachelor of Technology in Computer Science</h3>
-              <p>Expected Graduation: 2026</p>
+              <h3>Bachelor of Technology in Artificial Intelligence and Data Science</h3>
+              <p> Graduation: 2028</p>
             </div>
           </div>
         </div>

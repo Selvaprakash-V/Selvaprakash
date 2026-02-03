@@ -16,8 +16,6 @@ export const aboutData = {
     { name: 'Java', icon: '', category: 'backend' },
     { name: 'MongoDB', icon: '', category: 'database' },
     { name: 'MySQL', icon: '', category: 'database' },
-    { name: 'PostgreSQL', icon: '', category: 'database' },
-    { name: 'Firebase', icon: '', category: 'database' },
   ],
   interests: [
     { name: 'Traveling', icon: '' },
