@@ -4,9 +4,9 @@ export const codingProfiles = [
     icon: '',
     username: '@SelvaprakashV',
     stats: {
-      solved: '500+',
-      rank: 'Top 5%',
-      rating: '2100'
+      solved: '465+',
+      rank: 'Top 10%',
+      rating: '1750'
     },
     url: 'https://leetcode.com/u/SelvaprakashV/',
     color: '#FFA116'
@@ -16,9 +16,9 @@ export const codingProfiles = [
     icon: '',
     username: '@Selvaprakash-V',
     stats: {
-      repos: '50+',
-      stars: '1.2k',
-      contributions: '2000+'
+      repos: '30+',
+      contributions: '250+',
+      badges: '2 '
     },
     url: 'https://github.com/Selvaprakash-V',
     color: '#fff'
@@ -28,9 +28,9 @@ export const codingProfiles = [
     icon: '',
     username: '@selvaprakashv007',
     stats: {
-      stars: '5 stars',
-      rank: 'Gold',
-      badges: '25+'
+      stars: '3 stars',
+      badge: 'Java',
+      certifications: 'SQL'
     },
     url: 'https://www.hackerrank.com/profile/selvaprakashv007',
     color: '#2EC866'
@@ -40,9 +40,9 @@ export const codingProfiles = [
     icon: '',
     username: '@selvaprakashv',
     stats: {
-      rating: '1850',
-      stars: '4 stars',
-      rank: 'Global 5k'
+      solved: '216',
+      Bronze: '2 ',
+      streak: 'Daily '
     },
     url: 'https://www.codechef.com/users/selvaprakashv',
     color: '#5B4638'
@@ -60,28 +60,16 @@ export const codingProfiles = [
     color: '#1F8ACB'
   },
   {
-    platform: 'LinkedIn',
+    platform: 'SkillRack',
     icon: '',
-    username: '@selvaprakashv007',
+    username: '@SelvaprakashV',
     stats: {
-      connections: '500+',
-      posts: '50+',
-      followers: '1k+'
+      problems: '1250+',
+      certificates: '16',
+      Bronze: '413 '
     },
-    url: 'https://www.linkedin.com/in/selvaprakashv007/',
-    color: '#0A66C2'
-  },
-  {
-    platform: 'GeeksforGeeks',
-    icon: '',
-    username: '@GeeksforGeeks',
-    stats: {
-      problems: '300+',
-      score: '1500',
-      rank: 'Top 10%'
-    },
-    url: 'https://www.geeksforgeeks.org/user/GeeksforGeeks',
-    color: '#2F8D46'
+    url: 'https://www.skillrack.com/faces/resume.xhtml?id=514538&key=47cad40e11c02cf01a44755236a18b0a1e1920ac',
+    color: '#FF6B00'
   }
 ];
 
