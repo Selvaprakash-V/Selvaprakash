@@ -48,22 +48,23 @@ const projects = [
     order: 2
   },
   {
-    title: "Women's Professional Leagues Platform",
-    description: "A comprehensive platform for women's professional sports leagues featuring live scores, team management, player statistics, and real-time updates. Built for DELTATRE CORP to enhance women's sports visibility.",
-    company: "DELTATRE CORP",
-    duration: "Jun 2025 - Sep 2025",
+    title: "RechargeX - Mobile Recharge Platform",
+    description: "A full-stack mobile recharge platform built with the MERN stack. Features include user authentication with JWT, real-time plan browsing across multiple telecom operators (Airtel, Jio, Vi, BSNL), instant recharge processing, transaction history tracking, and a comprehensive admin dashboard for managing plans, users, and transactions.",
+    company: "Personal Project",
+    duration: "Full-Stack • MERN",
     technologies: [
-      "React",
+      "React 19",
       "Node.js",
       "MongoDB",
-      "Express",
-      "Socket.io",
-      "Redux",
-      "Material-UI"
+      "Express.js",
+      "JWT",
+      "Tailwind CSS",
+      "Vite",
+      "React Hook Form"
     ],
-    image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&h=500&fit=crop",
-    liveUrl: "https://wpl-platform-demo.com",
-    githubUrl: "https://github.com/selvaprakash/wpl-platform",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
+    liveUrl: "https://rechargex-backend2.onrender.com",
+    githubUrl: "https://github.com/selvaprakash/rechargex",
     featured: true,
     order: 3
   },

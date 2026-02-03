@@ -22,13 +22,14 @@ const Projects = () => {
       setProjects([
         {
           _id: '1',
-          title: "Women's Professional Leagues",
-          description: 'A comprehensive platform for women\'s professional sports leagues',
-          company: 'DELTATRE CORP',
-          duration: 'Jun 2025 - Sep 2025',
-          technologies: ['React', 'Node.js', 'MongoDB'],
-          image: '',
-          liveUrl: '#',
+          title: "RechargeX - Mobile Recharge Platform",
+          description: 'A full-stack mobile recharge platform with JWT authentication, multi-operator support (Airtel, Jio, Vi, BSNL), instant recharge processing, and admin dashboard.',
+          company: 'Personal Project',
+          duration: 'Full-Stack • MERN',
+          technologies: ['React 19', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'Tailwind CSS'],
+          image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop',
+          liveUrl: 'https://rechargex-backend2.onrender.com',
+          githubUrl: '#',
         },
         {
           _id: '2',
