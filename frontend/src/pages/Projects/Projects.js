@@ -22,16 +22,6 @@ const Projects = () => {
           <p>No projects available yet.</p>
         </div>
       )}
-
-      <div className="more-projects">
-        <div className="more-projects-content">
-          <h2>+25 MORE PROJECTS</h2>
-          <p>TO EXPLORE</p>
-          <a href="#contact" className="btn-view-all">
-            Get In Touch
-          </a>
-        </div>
-      </div>
     </section>
   );
 };

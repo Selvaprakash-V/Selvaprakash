@@ -13,8 +13,8 @@ const Resume = () => {
       <div className="resume-content">
         <div className="resume-download">
           <a 
-            href="/images/resume/Selvaprakash_Resume.pdf" 
-            download
+            href="/resume/SELVAPRAKASH.V RESUME .pdf" 
+            download="Selvaprakash_Resume.pdf"
             className="download-btn"
           >
             Download Resume (PDF)
