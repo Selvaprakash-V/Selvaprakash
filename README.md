@@ -1,151 +1,124 @@
-# MERN Portfolio Application
+# Selvaprakash V - Portfolio Website
 
-A modern, full-stack portfolio website built with MongoDB, Express, React, and Node.js.
+A modern, responsive portfolio website built with React.js showcasing my projects, skills, certifications, and coding profiles.
 
-## Features
+## 🚀 Live Demo
 
-- Responsive design with dark theme
-- Dynamic project showcase
-- About section with skills and interests
-- Contact form
-- Certifications and achievements display
-- Coding profile section
-- Admin panel for content management
-- RESTful API backend
+Visit the live site: [selvaprakash-portfolio.vercel.app](https://selvaprakash-portfolio.vercel.app)
 
-## Tech Stack
+## ✨ Features
 
-**Frontend:**
-- React.js 18
-- React Router
-- Axios for API calls
-- React Icons
-- CSS3 with animations
-- Responsive design
+- **Responsive Design** - Fully responsive with dark theme
+- **Project Showcase** - Dynamic project gallery with live demos
+- **About Section** - Skills, interests, and toolbox display
+- **Certifications** - 3D carousel of professional certifications
+- **Coding Profiles** - Links to competitive programming profiles
+- **Contact Form** - Easy-to-use contact functionality
+- **Smooth Animations** - Modern CSS animations and transitions
 
-**Backend:**
-- Node.js
-- Express.js 4
-- MongoDB with Mongoose
-- CORS enabled
-- RESTful API
+## 🛠️ Tech Stack
 
-## Project Structure
+- **React.js 18** - Frontend framework
+- **React Icons** - Icon library
+- **CSS3** - Styling with animations
+- **Static Data** - No backend required
+
+## 📁 Project Structure
 
 ```
-├── frontend/              # React frontend application
+├── frontend/
 │   ├── src/
-│   │   ├── components/   # Reusable React components
-│   │   ├── pages/        # Page components
-│   │   ├── services/     # API service layer
-│   │   ├── App.js        # Main app component
-│   │   └── index.js      # Entry point
-│   ├── public/           # Static files & images
-│   └── package.json      # Frontend dependencies
+│   │   ├── components/    # Reusable UI components
+│   │   │   ├── Hero/
+│   │   │   ├── Navbar/
+│   │   │   ├── ProjectCard/
+│   │   │   ├── SkillCard/
+│   │   │   ├── InterestCard/
+│   │   │   ├── LocationMap/
+│   │   │   ├── CertificationCarousel/
+│   │   │   └── ParticleBackground/
+│   │   ├── pages/         # Page components
+│   │   │   ├── Home/
+│   │   │   ├── About/
+│   │   │   ├── Projects/
+│   │   │   ├── Certifications/
+│   │   │   ├── CodingProfile/
+│   │   │   └── Contact/
+│   │   ├── data/          # Static data files
+│   │   │   ├── projects.js
+│   │   │   ├── about.js
+│   │   │   ├── certifications.js
+│   │   │   ├── codingProfiles.js
+│   │   │   └── index.js
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── public/
+│   │   └── images/        # Static images
+│   └── package.json
 │
-├── backend/              # Express backend API
-│   ├── controllers/     # Route controllers
-│   ├── models/          # Mongoose models
-│   ├── routes/          # API routes
-│   └── server.js        # Server entry point
-│
-├── config/              # Configuration files
-│   ├── .env             # Environment variables
-│   └── .env.example     # Environment template
-│
-├── docs/                # Documentation
-│   ├── BACKEND.md       # Backend documentation
-│   ├── FRONTEND.md      # Frontend documentation
-│   ├── DATABASE.md      # Database setup guide
-│   └── MAPS_SETUP.md    # Maps integration guide
-│
-├── scripts/             # Utility scripts
-│   ├── seed.js          # Database seeding
-│   └── checkProjects.js # Project verification
-│
-└── package.json         # Root dependencies
+└── package.json           # Root scripts
 ```
 
-## Installation
+## 🚀 Getting Started
 
-1. Clone the repository
+### Prerequisites
+
+- Node.js 16+ installed
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd selvaprakash
+   git clone https://github.com/Selvaprakash-V/Selvaprakash.git
+   cd Selvaprakash
    ```
 
-2. Install all dependencies:
+2. **Install dependencies**
    ```bash
-   npm run install-all
+   cd frontend
+   npm install
    ```
 
-3. Configure environment variables:
+3. **Start development server**
    ```bash
-   cp config/.env.example config/.env
-   ```
-   
-   Edit `config/.env` with your settings:
-   ```
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/portfolio
-   NODE_ENV=development
+   npm start
    ```
 
-4. Seed the database (optional):
-   ```bash
-   npm run seed
+4. **Open in browser**
+   ```
+   http://localhost:3000
    ```
 
-5. Start the development server:
-   ```bash
-   npm run dev
-   ```
+### Build for Production
 
-The backend will run on http://localhost:5000 and the frontend on http://localhost:3000.
+```bash
+cd frontend
+npm run build
+```
 
-## Available Scripts
+The build output will be in `frontend/build/` folder, ready for deployment.
 
-- `npm run dev` - Run both frontend and backend concurrently
-- `npm run server` - Run backend only (with nodemon)
-- `npm run client` - Run frontend only
-- `npm start` - Run production backend server
-- `npm run install-all` - Install all dependencies
-- `npm run seed` - Seed database with sample data
-- `npm run check-projects` - Verify projects in database
+## 🌐 Deployment
 
-## API Endpoints
+This project can be easily deployed to:
 
-### Projects
-- `GET /api/projects` - Get all projects
-- `POST /api/projects` - Create new project
-- `PUT /api/projects/:id` - Update project
-- `DELETE /api/projects/:id` - Delete project
+- **Vercel** - Connect GitHub repo for automatic deployments
+- **Netlify** - Drag and drop build folder or connect repo
+- **GitHub Pages** - Use `gh-pages` package
+- **Firebase Hosting** - `firebase deploy`
 
-### About
-- `GET /api/about` - Get about information
-- `POST /api/about` - Create/update about information
+## 📧 Contact
 
-### Contact
-- `POST /api/contact` - Submit contact form
+- **Email**: selvaprakashv007@gmail.com
+- **LinkedIn**: [linkedin.com/in/selvaprakashv007](https://www.linkedin.com/in/selvaprakashv007/)
+- **GitHub**: [github.com/Selvaprakash-V](https://github.com/Selvaprakash-V)
+- **LeetCode**: [leetcode.com/u/SelvaprakashV](https://leetcode.com/u/SelvaprakashV/)
 
-## Dependencies
+## 📝 License
 
-### Backend
-- express - Web framework
-- mongoose - MongoDB ODM
-- cors - CORS middleware
-- dotenv - Environment variables
-- body-parser - Request body parsing
-- nodemon - Development auto-reload
-- concurrently - Run multiple commands
+This project is open source and available under the [MIT License](LICENSE).
 
-### Frontend
-- react - UI library
-- react-dom - React DOM rendering
-- axios - HTTP client
-- react-icons - Icon library
-- react-scripts - React build tools
+---
 
-## License
-
-ISC
+⭐ If you like this portfolio, give it a star!

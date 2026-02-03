@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { contactService } from '../../services/api';
+import { contactInfo } from '../../data';
 import './Contact.css';
 
 const Contact = () => {
@@ -23,15 +23,17 @@ const Contact = () => {
     setLoading(true);
     setStatus({ type: '', message: '' });
 
-    try {
-      await contactService.send(formData);
-      setStatus({ type: 'success', message: 'Message sent successfully!' });
-      setFormData({ name: '', email: '', message: '' });
-    } catch (err) {
-      setStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
-    } finally {
-      setLoading(false);
-    }
+    // Create mailto link for contact form submission
+    const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:${contactInfo.email}?subject=${subject}&body=${body}`;
+    
+    setStatus({ type: 'success', message: 'Opening your email client...' });
+    setFormData({ name: '', email: '', message: '' });
+    setLoading(false);
   };
 
   return (
@@ -40,6 +42,28 @@ const Contact = () => {
         <div className="contact-header">
           <h1>Contact</h1>
           <p>Have a project in mind? I'm happy to discuss your technical requirements.</p>
+        </div>
+
+        <div className="contact-info">
+          <div className="contact-item">
+            <span className="contact-icon">📧</span>
+            <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+          </div>
+          <div className="contact-item">
+            <span className="contact-icon">📍</span>
+            <span>{contactInfo.location}</span>
+          </div>
+          <div className="contact-socials">
+            <a href={contactInfo.social.github} target="_blank" rel="noopener noreferrer" className="social-link">
+              GitHub
+            </a>
+            <a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-link">
+              LinkedIn
+            </a>
+            <a href={contactInfo.social.leetcode} target="_blank" rel="noopener noreferrer" className="social-link">
+              LeetCode
+            </a>
+          </div>
         </div>
 
         <form onSubmit={handleSubmit} className="contact-form">

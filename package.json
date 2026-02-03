@@ -1,35 +1,17 @@
 {
-  "name": "mern-portfolio",
+  "name": "selvaprakash-portfolio",
   "version": "1.0.0",
-  "description": "MERN Stack Portfolio Application",
-  "main": "backend/server.js",
+  "description": "Selvaprakash V - Portfolio Website",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-all": "npm install && cd frontend && npm install",
-    "seed": "node scripts/seed.js",
-    "check-projects": "node scripts/checkProjects.js"
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "cd frontend && npm install"
   },
   "keywords": [
     "portfolio",
-    "mern",
     "react",
-    "express",
-    "mongodb"
+    "frontend"
   ],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "mongoose": "^7.6.3"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.1",
-    "nodemon": "^3.0.1"
-  }
+  "author": "Selvaprakash V",
+  "license": "MIT"
 }

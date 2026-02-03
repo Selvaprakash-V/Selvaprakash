@@ -1,55 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import SkillCard from '../../components/SkillCard/SkillCard';
 import InterestCard from '../../components/InterestCard/InterestCard';
 import LocationMap from '../../components/LocationMap';
-import { aboutService } from '../../services/api';
+import { aboutData } from '../../data';
 import './About.css';
 
 const About = () => {
-  const [aboutData, setAboutData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetchAbout();
-  }, []);
-
-  const fetchAbout = async () => {
-    try {
-      const response = await aboutService.get();
-      setAboutData(response.data);
-      setLoading(false);
-    } catch (err) {
-      setLoading(false);
-      // Fallback data
-      setAboutData({
-        title: 'A Glimpse Into My World',
-        description: 'Learn more about who I am, what I do, and what inspires me.',
-        skills: [
-          { name: 'React Native', icon: '', category: 'frontend' },
-          { name: 'Vue.js', icon: '', category: 'frontend' },
-          { name: 'Next.js', icon: '', category: 'frontend' },
-          { name: 'Jest', icon: '', category: 'frontend' },
-          { name: 'Prisma ORM', icon: '', category: 'backend' },
-          { name: 'TypeORM', icon: '', category: 'backend' },
-          { name: 'MongoDB', icon: '', category: 'database' },
-          { name: 'Firebase', icon: '', category: 'database' },
-        ],
-        interests: [
-          { name: 'Traveling', icon: '' },
-          { name: 'Basketball', icon: '' },
-          { name: 'Running', icon: '' },
-          { name: 'Gaming', icon: '' },
-          { name: 'Music', icon: '' },
-          { name: 'Reading', icon: '' },
-        ],
-      });
-    }
-  };
-
-  if (loading) {
-    return <div className="loading">Loading...</div>;
-  }
-
   const frontendSkills = aboutData.skills.filter(s => s.category === 'frontend');
   const backendSkills = aboutData.skills.filter(s => s.category === 'backend');
   const databaseSkills = aboutData.skills.filter(s => s.category === 'database');
@@ -72,8 +28,8 @@ const About = () => {
             <p>Explore the books shaping my perspectives.</p>
             <div className="book-showcase">
               <div className="book-cover">
-                <div className="book-title">Atomic Habits</div>
-                <div className="book-subtitle">Tiny Changes, Remarkable Results</div>
+                <div className="book-title">{aboutData.book.title}</div>
+                <div className="book-subtitle">{aboutData.book.subtitle}</div>
               </div>
             </div>
           </div>
