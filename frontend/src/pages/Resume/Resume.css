@@ -1,0 +1,129 @@
+.resume-page {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.resume-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-download {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-teal));
+  color: var(--bg-primary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(92, 225, 230, 0.3);
+}
+
+.resume-preview {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.resume-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.resume-section h2 {
+  font-size: 1.3rem;
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+}
+
+.resume-info p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.resume-info a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+.resume-info a:hover {
+  color: var(--accent-teal);
+}
+
+.skills-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-group h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.skill-group p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.education-item h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.education-item p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .resume-page {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .resume-header h1 {
+    font-size: 2rem;
+  }
+
+  .resume-preview {
+    padding: 1.5rem;
+  }
+}

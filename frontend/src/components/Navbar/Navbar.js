@@ -17,9 +17,11 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Coding Profile', href: '#coding-profile' },
     { name: 'Certifications', href: '#certifications' },
-    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Coding Profile', href: '#coding-profile' },
+    { name: 'Social Links', href: '#social-links' },
+    { name: 'Resume', href: '#resume' },
   ];
 
   const scrollToSection = (e, href) => {
