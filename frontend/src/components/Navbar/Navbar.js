@@ -4,13 +4,31 @@ import './Navbar.css';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('#home');
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      
+      // Detect current section
+      const sections = ['home', 'projects', 'certifications', 'skills', 'coding-profile', 'social-links', 'resume'];
+      let currentSection = '#home';
+      
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            currentSection = `#${section}`;
+            break;
+          }
+        }
+      }
+      setActiveSection(currentSection);
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -59,7 +77,7 @@ const Navbar = () => {
             <li key={item.href} className="nav-item">
               <a
                 href={item.href}
-                className="nav-link"
+                className={`nav-link ${activeSection === item.href ? 'active' : ''}`}
                 onClick={(e) => scrollToSection(e, item.href)}
               >
                 <span className="nav-text">{item.name}</span>
