@@ -99,11 +99,12 @@
   object-fit: cover;
   box-shadow: 0 20px 60px rgba(92, 225, 230, 0.3);
   border: 2px solid rgba(92, 225, 230, 0.2);
+  transform: scale(1.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-photo:hover {
-  transform: translateY(-5px);
+  transform: scale(1.08) translateY(-5px);
   box-shadow: 0 30px 80px rgba(92, 225, 230, 0.4);
 }
 

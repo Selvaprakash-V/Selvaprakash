@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
-  const profilePhoto = '/images/profile/profile.png';
+  const profilePhoto = '/images/profile/profile (2) (1).png';
   const introWords = [
     'Hi,',
     "I'm",
