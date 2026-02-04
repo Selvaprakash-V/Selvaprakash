@@ -47,8 +47,8 @@ export const projects = [
     id: '3',
     title: "RechargeX - Mobile Recharge Platform",
     description: "A full-stack mobile recharge platform built with the MERN stack. Features include user authentication with JWT, real-time plan browsing across multiple telecom operators (Airtel, Jio, Vi, BSNL), instant recharge processing, transaction history tracking, and a comprehensive admin dashboard.",
-    company: "Personal Project",
-    duration: "Full-Stack • MERN",
+    company: "Internship Project",
+    duration: "Full-Stack • MERN Internship",
     technologies: [
       "React 19",
       "Node.js",
@@ -66,21 +66,21 @@ export const projects = [
   },
   {
     id: '4',
-    title: "Smart Task Manager",
-    description: "Intelligent task management application with AI-powered priority suggestions, deadline tracking, and team collaboration features. Includes analytics dashboard and productivity insights.",
-    company: "Personal Project",
-    duration: "Productivity • Web App",
+    title: "Inventory Management System (GDG Solution Challenge)",
+    description: "Smart inventory tracking web app built for the Google Solution Challenge to help small businesses and teams manage stock efficiently. Features include product & category management, stock updates, low-stock monitoring, and clean dashboard-based tracking for faster decisions.",
+    company: "Hackathon Project",
+    duration: "Web Development • Business Automation",
     technologies: [
+      "Next.js",
       "React",
-      "TypeScript",
       "Node.js",
-      "PostgreSQL",
-      "GraphQL",
-      "Chakra UI"
+      "MongoDB",
+      "Tailwind CSS",
+      "Firebase"
     ],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=500&fit=crop",
-    liveUrl: "https://smart-tasks-app.vercel.app",
-    githubUrl: "https://github.com/selvaprakash/smart-task-manager",
+    liveUrl: "#", // TODO: replace with live demo URL
+    githubUrl: "#", // TODO: replace with GitHub repo URL
     featured: false
   }
 ];

@@ -59,7 +59,7 @@ const Navbar = () => {
           className="navbar-logo"
           onClick={(e) => scrollToSection(e, '#home')}
         >
-          <span className="logo-text">Portfolio</span>
+          <span className="logo-text">Selvaprakash</span>
         </a>
 
         <button
