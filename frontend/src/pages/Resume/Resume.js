@@ -36,6 +36,10 @@ const Resume = () => {
             <h2>Technical Skills</h2>
             <div className="skills-list">
               <div className="skill-group">
+                <h3>Languages</h3>
+                <p>{aboutData.skills.filter(s => s.category === 'languages').map(s => s.name).join(', ')}</p>
+              </div>
+              <div className="skill-group">
                 <h3>Frontend</h3>
                 <p>{aboutData.skills.filter(s => s.category === 'frontend').map(s => s.name).join(', ')}</p>
               </div>
@@ -46,6 +50,10 @@ const Resume = () => {
               <div className="skill-group">
                 <h3>Databases</h3>
                 <p>{aboutData.skills.filter(s => s.category === 'database').map(s => s.name).join(', ')}</p>
+              </div>
+              <div className="skill-group">
+                <h3>Tools</h3>
+                <p>{aboutData.skills.filter(s => s.category === 'tools').map(s => s.name).join(', ')}</p>
               </div>
             </div>
           </div>
