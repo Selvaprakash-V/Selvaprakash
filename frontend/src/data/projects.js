@@ -60,8 +60,8 @@ export const projects = [
       "React Hook Form"
     ],
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-    liveUrl: "https://rechargex-backend2.onrender.com",
-    githubUrl: "https://github.com/selvaprakash/rechargex",
+    liveUrl: "https://rechargex-frontend.onrender.com/",
+    githubUrl: "https://github.com/Selvaprakash-V/RechargeX-backend2.git",
     featured: true
   },
   {
@@ -79,8 +79,8 @@ export const projects = [
       "Firebase"
     ],
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=500&fit=crop",
-    liveUrl: "#", // TODO: replace with live demo URL
-    githubUrl: "#", // TODO: replace with GitHub repo URL
+    liveUrl: "https://inv-gdg.vercel.app/home",
+    githubUrl: "https://github.com/Selvaprakash-V/INV-GDG",
     featured: false
   }
 ];

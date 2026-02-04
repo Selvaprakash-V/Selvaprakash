@@ -136,37 +136,9 @@
   padding-top: 1rem;
 }
 
-.project-link {
-  color: var(--accent-cyan);
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background: rgba(92, 225, 230, 0.1);
-  border: 1px solid rgba(92, 225, 230, 0.3);
-  border-radius: 10px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.project-btn {
   font-size: 0.9rem;
-}
-
-.project-link:hover {
-  background: rgba(92, 225, 230, 0.2);
-  border-color: var(--accent-cyan);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(92, 225, 230, 0.3);
-}
-
-.github-link {
-  background: rgba(159, 122, 234, 0.1);
-  border-color: rgba(159, 122, 234, 0.3);
-  color: var(--purple);
-}
-
-.github-link:hover {
-  background: rgba(159, 122, 234, 0.2);
-  border-color: var(--purple);
-  box-shadow: 0 4px 15px rgba(159, 122, 234, 0.3);
+  padding-inline: 1.4rem;
 }
 
 @media (max-width: 768px) {
@@ -194,7 +166,7 @@
     flex-direction: column;
   }
 
-  .project-link {
+  .project-btn {
     width: 100%;
     justify-content: center;
   }

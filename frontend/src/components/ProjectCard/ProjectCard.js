@@ -42,9 +42,9 @@ const ProjectCard = ({ project }) => {
               href={liveUrl} 
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link"
+              className="btn btn-primary project-btn"
             >
-              <span></span> Live Demo
+              Live Demo
             </a>
           )}
           {githubUrl && (
@@ -52,9 +52,9 @@ const ProjectCard = ({ project }) => {
               href={githubUrl} 
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link"
+              className="btn btn-secondary project-btn"
             >
-              <span></span> GitHub
+              GitHub
             </a>
           )}
         </div>
