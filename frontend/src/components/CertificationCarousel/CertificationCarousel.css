@@ -1,7 +1,7 @@
 .cert-carousel-wrapper {
   max-width: 1200px;
   margin: 0 auto 4rem;
-  padding: 2rem 0;
+  padding: 0.25rem 0 1.75rem;
   border-radius: 0;
   position: relative;
   background: transparent;
@@ -210,7 +210,7 @@
 
 .cert-carousel-dots {
   position: relative;
-  margin-top: 1.75rem;
+  margin-top: 9.75rem;
   display: flex;
   justify-content: center;
   gap: 0.6rem;

@@ -6,14 +6,15 @@ import { certifications } from '../../data';
 const Certifications = () => {
   return (
     <section className="certifications-page">
-      <div className="certifications-header">
-        <h1>Certifications</h1>
-        <p>Professional development and continuous learning</p>
-      </div>
+      <div className="certifications-container">
+        <div className="certifications-header">
+          <h1>Certifications</h1>
+          <p>Professional development and continuous learning</p>
+        </div>
 
-      <div className="certifications-content">
-        {/* 3D Carousel Highlight */}
-        <CertificationCarousel certificates={certifications} />
+        <div className="certifications-content">
+          <CertificationCarousel certificates={certifications} />
+        </div>
       </div>
     </section>
   );
