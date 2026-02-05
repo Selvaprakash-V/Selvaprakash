@@ -82,6 +82,25 @@ export const projects = [
     liveUrl: "https://inv-gdg.vercel.app/home",
     githubUrl: "https://github.com/Selvaprakash-V/INV-GDG",
     featured: false
+  },
+  {
+    id: '5',
+    title: "Metro Induction Planner (Smart India Hackathon)",
+    description: "A decision-support web application built for Smart India Hackathon (SIH) to help metro teams plan and manage train inductions efficiently. It simplifies fleet planning by supporting train allocation, service scheduling, and maintenance readiness using dashboard-based insights for faster operational decisions.",
+    company: "Hackathon Project",
+      duration: "Web Development • Smart Mobility",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Chart.js / Recharts"
+    ],
+    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&h=500&fit=crop",
+    liveUrl: "https://sih-two-theta.vercel.app/",
+    githubUrl: "https://github.com/suriyaprakash-25/SIH",
+    featured: false
   }
 ];
 

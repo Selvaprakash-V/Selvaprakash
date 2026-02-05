@@ -60,6 +60,11 @@
   z-index: 4;
 }
 
+.projects-grid .project-card:nth-child(5) {
+  top: 180px;
+  z-index: 5;
+}
+
 .no-projects {
   text-align: center;
   padding: 4rem 2rem;
