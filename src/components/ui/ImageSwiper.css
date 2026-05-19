@@ -1,0 +1,45 @@
+.image-swiper {
+  position: relative;
+  display: grid;
+  place-content: center;
+  user-select: none;
+  touch-action: none;
+  transform-style: preserve-3d;
+}
+
+.image-swiper-card {
+  position: absolute;
+  place-self: center;
+  overflow: hidden;
+  cursor: grab;
+  will-change: transform;
+  transform: perspective(760px)
+    translateZ(calc(-1 * 8px * var(--i)))
+    translateY(calc(5px * var(--i)))
+    translateX(var(--swipe-x, 0px))
+    rotateY(var(--swipe-rotate, 0deg));
+}
+
+.image-swiper-card:active {
+  cursor: grabbing;
+}
+
+.image-swiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  background: #0b1220;
+}
+
+@media (max-width: 768px) {
+  .image-swiper-card {
+    transform: perspective(720px)
+      translateZ(calc(-1 * 7px * var(--i)))
+      translateY(calc(4px * var(--i)))
+      translateX(var(--swipe-x, 0px))
+      rotateY(var(--swipe-rotate, 0deg));
+  }
+}
