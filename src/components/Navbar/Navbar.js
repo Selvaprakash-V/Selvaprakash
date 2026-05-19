@@ -11,7 +11,7 @@ const Navbar = () => {
       setScrolled(window.scrollY > 50);
       
       // Detect current section
-      const sections = ['home', 'projects', 'certifications', 'skills', 'coding-profile', 'social-links', 'resume'];
+      const sections = ['home', 'projects', 'certifications', 'coding-profile', 'social-links', 'resume'];
       let currentSection = '#home';
       
       for (const section of sections) {
@@ -36,7 +36,6 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'Projects', href: '#projects' },
     { name: 'Certifications', href: '#certifications' },
-    { name: 'Skills', href: '#skills' },
     { name: 'Coding Profile', href: '#coding-profile' },
     { name: 'Social Links', href: '#social-links' },
     { name: 'Resume', href: '#resume' },
