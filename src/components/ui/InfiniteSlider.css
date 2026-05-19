@@ -1,0 +1,39 @@
+.infinite-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.infinite-slider__track {
+  display: flex;
+  width: max-content;
+  animation: infinite-slider-scroll var(--slider-duration, 28s) linear infinite;
+  will-change: transform;
+}
+
+.infinite-slider:hover .infinite-slider__track {
+  animation-duration: var(--slider-hover-duration, 48s);
+}
+
+.infinite-slider__group {
+  display: flex;
+  gap: 1rem;
+  padding: 0.25rem 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: max-content;
+}
+
+.infinite-slider__group > * {
+  flex-shrink: 0;
+}
+
+@keyframes infinite-slider-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,64 @@
+.progressive-blur {
+  position: relative;
+  overflow: hidden;
+}
+
+.progressive-blur__content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gradient overlays for fade effect */
+.progressive-blur__left,
+.progressive-blur__right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.progressive-blur__left {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.progressive-blur__right {
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Dark theme adjustment */
+:root[data-theme="dark"] .progressive-blur__left,
+:root[data-theme="dark"] .progressive-blur__right {
+  background: linear-gradient(90deg, rgba(10, 10, 20, 1) 0%, rgba(10, 10, 20, 0) 100%);
+}
+
+:root[data-theme="dark"] .progressive-blur__right {
+  background: linear-gradient(90deg, rgba(10, 10, 20, 0) 0%, rgba(10, 10, 20, 1) 100%);
+}
+
+/* For light backgrounds */
+body {
+  color-scheme: dark;
+}
+
+.progressive-blur__left {
+  background: linear-gradient(90deg, rgba(15, 23, 42, 1) 0%, rgba(15, 23, 42, 0) 100%);
+}
+
+.progressive-blur__right {
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 1) 100%);
+}
+
+/* Strength variations */
+.progressive-blur--weak .progressive-blur__left,
+.progressive-blur--weak .progressive-blur__right {
+  width: 50px;
+}
+
+.progressive-blur--strong .progressive-blur__left,
+.progressive-blur--strong .progressive-blur__right {
+  width: 150px;
+}
