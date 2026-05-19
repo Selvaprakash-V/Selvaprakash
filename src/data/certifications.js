@@ -8,7 +8,8 @@ export const certifications = [
     skills: ['Data Structures', 'Algorithms', 'C', 'C++'],
     extra: '76 hours total training',
     icon: null,
-    file: '/images/certificates/CertificateFor mastering data steucture & algorithms.pdf'
+    file: '/images/certificates/CertificateFor mastering data steucture & algorithms.pdf',
+    image: '/images/certificates/img/Mastering Data Structures & Algorithms using C and C++.png'
   },
   {
     id: 2,
@@ -39,7 +40,8 @@ export const certifications = [
     skills: ['Machine Learning', 'Python'],
     extra: '8 hours',
     icon: null,
-    file: '/images/certificates/machine learning using python programming.pdf'
+    file: '/images/certificates/machine learning using python programming.pdf',
+    image: '/images/certificates/img/Machine Learning using Python Programming.png'
   },
   {
     id: 5,
@@ -49,7 +51,8 @@ export const certifications = [
     skills: ['No-Code AI Agents', 'n8n Integration'],
     extra: 'Certificate Code: 9538920',
     icon: null,
-    file: '/images/certificates/n8n course.pdf'
+    file: '/images/certificates/n8n course.pdf',
+    image: '/images/certificates/img/n8n Course No Code AI Agent Builder.png'
   },
   {
     id: 6,
@@ -60,7 +63,8 @@ export const certifications = [
     skills: ['Power BI', 'Data Skills'],
     extra: '6.5 hours',
     icon: null,
-    file: '/images/certificates/power bi mastery.pdf'
+    file: '/images/certificates/power bi mastery.pdf',
+    image: '/images/certificates/img/Power BI Mastery Zero to Hero Data Skills.png'
   },
   {
     id: 7,
@@ -71,7 +75,8 @@ export const certifications = [
     skills: ['Python', 'Data Science Basics'],
     extra: '4 hours',
     icon: null,
-    file: '/images/certificates/python for data science pro.pdf'
+    file: '/images/certificates/python for data science pro.pdf',
+    image: '/images/certificates/img/Python for Data Science Pro The Complete Mastery Course.png'
   },
   {
     id: 8,
@@ -82,7 +87,8 @@ export const certifications = [
     skills: ['Python Programming'],
     extra: '2.5 hours',
     icon: null,
-    file: '/images/certificates/python programming Masterclass.pdf'
+    file: '/images/certificates/python programming Masterclass.pdf',
+    image: '/images/certificates/img/Python Programming Masterclass.png'
   },
   {
     id: 9,
@@ -92,7 +98,8 @@ export const certifications = [
     skills: ['SQL Querying'],
     extra: 'Certification ID: 7IEB45A9FF20',
     icon: null,
-    file: '/images/certificates/sql_basic certificate.pdf'
+    file: '/images/certificates/sql_basic certificate.pdf',
+    image: '/images/certificates/img/SQL (Basic).png'
   },
   {
     id: 10,
@@ -103,7 +110,8 @@ export const certifications = [
     skills: ['Java Development'],
     extra: '9 hours',
     icon: null,
-    file: '/images/certificates/the complete java programmer.pdf'
+    file: '/images/certificates/the complete java programmer.pdf',
+    image: '/images/certificates/img/The Complete Java Programmer From Scratch to Advanced.png'
   },
   {
     id: 11,
@@ -114,7 +122,8 @@ export const certifications = [
     skills: ['Prompt Engineering', 'AI Prompt Engineering'],
     extra: '2 hours total',
     icon: null,
-    file: '/images/certificates/Prompt Engineering PRO.pdf'
+    file: '/images/certificates/Prompt Engineering PRO.pdf',
+    image: '/images/certificates/img/Prompt Engineering PRO (AI Prompt Engineering FAST-TRACK).png'
   }
 ];
 
